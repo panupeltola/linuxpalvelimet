@@ -158,7 +158,8 @@ Lopuksi vielä varmistan palomuurin toiminnan komennolla 'sudo sysyemctl status 
 
 ufw ei näyttäisi olevan päällä, joten yritän käynnistää sen komennolla 'sudo systemctl start ufw'
 
-![kuva](https://github.com/user-attachments/assets/2a9b5f1e-89e7-4233-a698-9101512eab9c)
+Katson vielä muuttuiko status
+
 
 Tällä komennolla palomuuri lähti liikkeelle ja Linux on toimintakunnossa
 
