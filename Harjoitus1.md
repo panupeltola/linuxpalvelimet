@@ -59,6 +59,98 @@ Lopuksi luon vielä virtuaalikovalevyn, jonka koko tilan allokoin kerralla. Käs
 
 ![Kovalevy](https://github.com/user-attachments/assets/4ecc0a18-e954-4de7-8005-2543ca24950f)
 
+Tämän jälkeen odotan, kun virtuaalikonetta luodaan
+
+![kuva](https://github.com/user-attachments/assets/8d390273-0722-45c4-b585-57b05e4b25d5)
+
+**24.8.2024 klo 13:09**
+
+Kone on saatu luotua, joten käynnistän sen ja aloitan asennuksen
+
+![kuva](https://github.com/user-attachments/assets/ed44d55b-b051-4de0-b368-fca620aedebf)
+
+Muistin tässä vaiheessa, että halusin kokeilla Tero Karvisen luennolla näyttämää tapaa asentaa Debian live version kautta. Yritän saanko vain muutettua VirtualBoxissa asennuslevyn vai pitääkö minun luoda kone alusta
+
+Lataan ensin uuden levykuvan, valitsen käyttöliittymäski Gnomen:
+
+![kuva](https://github.com/user-attachments/assets/5f61be62-3751-4264-8cc5-41a4712bf7a1)
+
+
+**24.8.2024 klo 13:25**
+
+Tiedosto on ladannut ja yritän nyt vaihtaa asennus levyä
+Poistin asennuslevyn painikkeesta "Remove disk from virtual drvie" ja tein sen ajattelematta ennen kuvan ottamista
+
+![kuva](https://github.com/user-attachments/assets/c25a2e04-dd91-491f-942d-52edee04cfdb)
+
+Seuraavaksi lisään asemaan ladatun levykkeen live versiosta ja käynnistän koneen uudelleen
+
+![kuva](https://github.com/user-attachments/assets/f799fdaf-3769-451f-8416-8debffeeb5d7)
+
+Levyn vaihto näyttää onnistuneen ja käynnistän nyt koneen Live systemin.
+
+![kuva](https://github.com/user-attachments/assets/f4a77be8-2c1b-4f0c-b9f9-41f8b4ea844b)
+
+Kone boottasi alkuasetuksiin.
+
+Valitsen näppäimistön kieleksi suomen
+
+![kuva](https://github.com/user-attachments/assets/2cf76a25-dc6f-4792-a08e-5bd44223826a)
+
+Kokeilen, että hiiri toimii, näppäimistö toimii, joskin asetukset ovat Yhdysvaltojen asetuksilla, vaikka sen vaihdoinkin ja verkko toimii
+![kuva](https://github.com/user-attachments/assets/f20ab7cd-22d7-4382-8f33-b00a76222660)
+
+Asennan nyt koko version.
+
+![kuva](https://github.com/user-attachments/assets/61d445e9-3a00-4afc-bbb9-bb860459577f)
+
+Valitsen kieleksi "American English"
+
+![kuva](https://github.com/user-attachments/assets/d5839924-decf-462f-bc3b-fc8faacee1b1)
+
+Sijainniksi Helsingin
+
+![kuva](https://github.com/user-attachments/assets/fd712ecb-8061-4345-bbcb-f0f7e09026de)
+
+Näppäimistön kieleksi Suomen
+
+![kuva](https://github.com/user-attachments/assets/1e9379b5-b0d2-4929-b742-80a88e2bda53)
+
+Kovalevyn tyhjennnän, enkä tässä tapauksessa salaa, en osioi levyä itse varmistan myös, että Boot loaderilla on oikea sijainti
+
+![kuva](https://github.com/user-attachments/assets/d5f0924a-9618-48d6-bd4f-e36f26439c6e)
+
+Seuraavassa vaiheessa luon käyttäjäni alter egoni nimiin, valitsen myös automaattisen kirjautumisen
+
+![kuva](https://github.com/user-attachments/assets/92de2b14-7f78-4795-ab52-3a439d60f81b)
+
+Tämän jälkeen odotan asentamista
+
+![kuva](https://github.com/user-attachments/assets/1abd6f2b-5981-4a1b-b7ca-0de125a6a5bf)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
