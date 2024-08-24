@@ -129,6 +129,57 @@ Tämän jälkeen odotan asentamista
 ![kuva](https://github.com/user-attachments/assets/1abd6f2b-5981-4a1b-b7ca-0de125a6a5bf)
 
 
+**24.8.2024 klo 13:47**
+
+Käyttöjärjestelmä on asentunut ja katson lähteekö laite toimimaan uudelleen käynnistyksellä
+
+![kuva](https://github.com/user-attachments/assets/532ce393-1ab6-4c03-bf40-5589b2067dd0)
+
+Koetin perusominaisuudet ja totesin, että hiiri, näppäimistö ääkkösineen ja verkko toimivat.
+Totesin siis, että asennus on onnistunut.
+
+![kuva](https://github.com/user-attachments/assets/21b18f68-ae27-4dcf-adc8-ebd1e82b76c6)
+
+
+
+# k) Vapaaehtoinen bonus: suosikkiohjelmani Linuxilla
+
+Vielä viimeisenä temppunani asennan ja kytken päälle ufw palomuurin.
+
+Asennan sen terminaalista komennolla 'sudo apt-get install ufw'
+
+![kuva](https://github.com/user-attachments/assets/308d9112-6efe-4fd1-9aa7-962f0c6fa429)
+
+Asennuksen jälkeen kytken sen päälle komennolla 'sudo systemctl enable ufw'
+
+![kuva](https://github.com/user-attachments/assets/a947493e-8330-4e0c-9299-500d781f6e9c)
+
+Lopuksi vielä varmistan palomuurin toiminnan komennolla 'sudo sysyemctl status ufw'
+
+![kuva](https://github.com/user-attachments/assets/788313bb-41c6-4833-bcd3-bb125ed82b34)
+
+ufw ei näyttäisi olevan päällä, joten yritän käynnistää sen komennolla 'sudo systemctl start ufw'
+
+![kuva](https://github.com/user-attachments/assets/2a9b5f1e-89e7-4233-a698-9101512eab9c)
+
+Tällä komennolla palomuuri lähti liikkeelle ja Linux on toimintakunnossa
+
+![kuva](https://github.com/user-attachments/assets/eaa22616-8d57-48fd-8478-9787a9dc7f4a)
+
+# Lähteet:
+- T. Karvinen, 2006, Raportin kirjoittaminen, https://terokarvinen.com/2006/raportin-kirjoittaminen-4/, luettu 24.8.2024
+- Free Software Foundation, 2024, What is Free Software?, https://www.gnu.org/philosophy/free-sw.html, luettu 24.8.2024  
+
+
+
+
+
+
+
+
+
+
+
 
 
 
