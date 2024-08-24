@@ -102,8 +102,6 @@ Kokeilen, että hiiri toimii, näppäimistö toimii, joskin asetukset ovat Yhdys
 
 Asennan nyt koko version.
 
-![kuva](https://github.com/user-attachments/assets/61d445e9-3a00-4afc-bbb9-bb860459577f)
-
 Valitsen kieleksi "American English"
 
 ![kuva](https://github.com/user-attachments/assets/d5839924-decf-462f-bc3b-fc8faacee1b1)
