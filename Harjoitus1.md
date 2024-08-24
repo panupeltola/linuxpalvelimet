@@ -40,24 +40,24 @@
 
 Aloitan lataamalla Debian 12.6.0 Debianin sivuilta. Lataan ensimmäisenä ehdotetun version
 
-![kuva](https://github.com/user-attachments/assets/5aea95e5-408a-4d0c-923c-65b95154df4c)
+![Verkkosivu](https://github.com/user-attachments/assets/5aea95e5-408a-4d0c-923c-65b95154df4c)
 
 Seuraavaksi luon uuden virtuaalikoneen VirtualBoxin "New" painikkeesta
 
-![kuva](https://github.com/user-attachments/assets/e03ff5e8-ebee-4964-a11b-3fa48a9c4bdd)
+![Luo uusi kone](https://github.com/user-attachments/assets/e03ff5e8-ebee-4964-a11b-3fa48a9c4bdd)
 
 Valitsen oikean ISO-kuvan ja klikkaan laatikon "Skip Unattended Installation" valitsen seuraavaksi Next
 
-![kuva](https://github.com/user-attachments/assets/1d59c796-e92b-4f85-a17e-113e206c30b6)
+![Asetukset](https://github.com/user-attachments/assets/1d59c796-e92b-4f85-a17e-113e206c30b6)
 
 Annan virtuaalikoneelle reilusti resurria käytettäväksi, koska se nopeuttaa arkea, vaikka vähemmällä selviäisi varmasti.
 Annan 8 GB muistia ja neljä prosessoria
 
-![kuva](https://github.com/user-attachments/assets/50e3f752-121a-45ba-968a-fa20572993e4)
+![Resurssit](https://github.com/user-attachments/assets/50e3f752-121a-45ba-968a-fa20572993e4)
 
 Lopuksi luon vielä virtuaalikovalevyn, jonka koko tilan allokoin kerralla. Käsittääkseni ilman tätä täppää kovalevyn koko kasvaa annettun maksimiin asti dynaamisesti, mutta vaihtoehdolla "Pre-allocate Full Size" tila varataan fyysiseltä kovalevyltä kerralla.
 
-![kuva](https://github.com/user-attachments/assets/4ecc0a18-e954-4de7-8005-2543ca24950f)
+![Kovalevy](https://github.com/user-attachments/assets/4ecc0a18-e954-4de7-8005-2543ca24950f)
 
 
 
