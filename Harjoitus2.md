@@ -239,11 +239,17 @@ Micro antaa tallentaa tiedoston, mutta pyytää uutta tiedoston nimeä. Näin vo
 
 # Lähteet:
 T. Karvinen, 2020, Command Line Basics Revisited, https://terokarvinen.com/2020/command-line-basics-revisited/?fromSearch=command%20line%20basics%20revisited, luettu 31.8.2024
+
 askUbuntu foormuit, 2017, https://askubuntu.com/questions/879877/how-to-know-whether-a-particular-package-is-installed-on-ubuntu, luettu 31.8.2024
+
 A. Prakash, 2020, Enable Tab Completion https://linuxhandbook.com/enable-tab-completion/, Luettu 31.8.2024
+
 Terminal Trove,TUI Terminal Tools, 2024, https://terminaltrove.com/categories/tui/, Luettu 31.8.2024
+
 C. Hoffman, 2016, The Linux Directory Structure, Explained, https://www.howtogeek.com/117435/htg-explains-the-linux-directory-structure-explained/, Luettu 31.8.2024
+
 Learn Linux TV, 2022, Linux Crash Course - The grep Command, https://www.youtube.com/watch?v=Tc_jntovCM0&, katsottu 31.8.2024
+
 V. Gite, 2024, Understanding /etc/passwd File Format, https://www.cyberciti.biz/faq/understanding-etcpasswd-file-format/, luettu 31.8.2024
 
 
