@@ -53,6 +53,15 @@ Varmistin vielä, että tiedoston teksti on tallentunut 'cat passeli.txt' komenn
 Teksti näkyy samana, joten totesin ohjelman asennuksen onnistuneen. 
 
 
+# b) Apt
+
+Totesin äskeistä harjoitusta tehdessäni, että minulla ei toimi tabulatuurilla automaattitäyttö. Nopealla googlettamisella kyseessä on paketti bash-completion, joka ei ole jokaisessa jakelussa automaattisesti (https://linuxhandbook.com/enable-tab-completion/). Se on siis yksi haluamani paketti, toisena otan Windowsista tutun 'tree' komennon ja viimeisenä linkistä (https://terminaltrove.com/categories/tui/) katsomieni pakettien osalta päädyin 'wiki-tui' pakettiin, jonka pitäisi näyttää helposti Wikipedian artikkeleja terminaalissa.
+
+Yritin asentaa kaikkia kerralla komennolla 'sudo apt-get -y install bash-completion tree wiki-tui'
+
+Asennnuksen jälkeen tuli virheilmoitus, että wiki-tui pakettia ei löydy. Tutkin sen ehdottanutta sivua tarkemmin ja totesin sen olevan osa eri paketinhallintaohjelmaa (pacman)
+Yritin kolmanneksi (https://github.com/rothgar/awesome-tuis) linkin takaa löytynyttä spotify-player pakettia.
+
 
 
 
