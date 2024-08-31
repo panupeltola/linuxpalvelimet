@@ -169,32 +169,69 @@ Katsoin vielä boot.log tiedoston sisään komennolla 'sudo micro boot.log'
 
 ![kuva](https://github.com/user-attachments/assets/eef06de2-1d89-4389-b8b2-95ce73bc2c26)
 
+# d) The Friendly M
+31.8.2024 klo 12:50
+
+Nukuin välissä hiukan kuumetta matalammaksi ja jatkan linuxin mahtavassa maailmassa.
+Seuraavassa tehtävässä opettelen Grepin käyttöä, otin avuksi Youtubesta kanavan Learn Linux TV videon "Linux Crash Course - The grep Command".
+Otin tästä kuitenkin vain perusideaa kiinni, sillä video tuntui selittävän asiat huonosti ja hyppi liikaa omaan makuuni. Kokeilin kuitenkin tästä oppineena tehdä grep komentoa /etc/ssh/ssh_config tiedostoon nähdäkseni mikä portti minulla on valittuna SSH yhteydelle.
+
+![kuva](https://github.com/user-attachments/assets/7afc07a6-9013-4bd3-86f1-24013a023e6b)
+
+Sain vastaukseksi #  Port 22. Risuaita edessä kuitenkin ehdottaisi, että tämä on vain kommenttina, eikä sitä ole todellisuudessa määritetty.
+
+Luin seuraavaksi vielä toisen ohjeen (https://www.cyberciti.biz/faq/howto-use-grep-command-in-linux-unix/) ja yritin saada sieltä hyödyllisiä käyttökohteita, sillä pääni löi tyhjää.
+
+Muokkasin artikkelista löytämäni komennon 'grep passeli /etc/passwd' nähdäkseni mitä tietoja passwd tiedosto sisältää käyttäjänimestäni saaden seruaavan vastauksen:
+
+
+![kuva](https://github.com/user-attachments/assets/0b99b4e6-e352-488c-8127-f6051006a1da)
+
+Halusin vielä ymmärtää mitä tämä saamani vastaus tarkoittaa ja löysin aiheesta seuraavan artikkelin (https://www.cyberciti.biz/faq/understanding-etcpasswd-file-format/)
+Tieto on pätkitty kaksoispisteillä ja näyttää seuraavat asiat:
+- Käyttäjän nimi
+- Salasana (Ei näy tässä tiedostossa)
+- Käyttäjä ID
+- Ryhmä ID
+- Käyttäjä ID info
+- Kotihakemisto
+- Käytetty shell
+
+ # e) Pipe
+
+ Viimeisenä vielä tutkin putkia ja koitin kahta eri asiaa. Ensin koitin ssh.config tiedoston muuttamista less tilaan ja sitten yritin tuoda verkosta jonkin artikkelin grepille.
+ En enää muista tarkkaan miten verkosta saatu tieto tuodaan, mutta oman muistini mukaan sen saisi curl komennolla.
+
+ Yritän kuitenkin ensin ssh.configia lessillä. Luen tiedoston 'cat' komennolla ja putkitan lessille.
+
+ ![kuva](https://github.com/user-attachments/assets/9ab64b9b-f2e8-42c8-af36-85712ba5fbd4)
+
+
+ Tämä onnistui. Asensin seuraavaksi curlin. 'sudo apt-get -y install curl' komennolla
+
+ Ohjelma oli jo asennettu, joten päätin kokeilla, mitä tietoa komento 'curl https://en.wikipedia.org/wiki/Red-tailed_hawk' minulle antaa.
+
+ ![kuva](https://github.com/user-attachments/assets/f1a65467-eeaf-4388-a3a1-f360d5bc06b9)
+
+ Näköjään curl lataa koko lähdekoodin, jota en tässä tarvitse. Katsoin Wikipediasta haluamani tiedon ja tarkistan voiko sen hakea grepillä. Yrtiän hakea tietoa Kingdom putkittamalla äskeisen komennon perään '| grep Kingdom'
+
+ ![kuva](https://github.com/user-attachments/assets/982899c9-e8a1-45ce-b522-8d4d12282bb8)
+
+ Sain aivan erilaisen ongelmatilanteen. Totesin, ettei grep ole ehkä puhtaasti html koodille paras ja vaatisi jotain puhdistustoimenpiteitä.
+
+ Halusin vielä onnistua jossain, niin päätin yritää voinko putkittaa ssh-config tiedoston suoraan microlle 'cat' komennon avulla. Koko komento on 'cat ssh_config | micro'
+ 
+ ![kuva](https://github.com/user-attachments/assets/b7e81720-dcf8-4246-98ba-584bf5a3ee72)
+
+ Tämä onnistui. Tarkistin voinko tallentaa tiedostoa.
+
+![kuva](https://github.com/user-attachments/assets/280dedfe-d9ef-4f73-9160-5a4131032970)
+
+Micro antaa tallentaa tiedoston, mutta pyytää uutta tiedoston nimeä. Näin voi siis näköjään luoda helposti kopion tiedostosta, vailla pelkoa että vahingossa rikkoisi mitään. En tallenna tiedostoa ja suljen virttuaalikoneen tältä viikkoa.
+
+
+ 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
