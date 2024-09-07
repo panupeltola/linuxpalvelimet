@@ -71,6 +71,8 @@ Ohjeessa on kuitenkin määritetty vakiosivu 'sudo' komentoa käyttäen ja pää
 Oletan tämän olevan erittäin huono käytäntö, sillä mikäli tämä toimii annan oikeuden muokata mahdollisesti koko palvelimen etusivua ilman pääkäyttäjän oikeuksia.
 Teen tämän kokeilun vuoksi ja jos se toimii poistan osoitteen, ja teen sen käyttäjän oman avaussivun kautta.
 
+## Riskin tavan testaaminen
+
 Aloitin luomalla nimipohjaisen isännän komennolla 'sudoedit /etc/apache2/sites-aviable/localhost.conf' ja kirjaamalla sen sisällön
 
 ![kuva](https://github.com/user-attachments/assets/1b12d04d-314e-4c21-aef3-b6cf7f1d2192)
@@ -97,6 +99,34 @@ Tämä oli jo sallittu. Päätin vielä koettaa katsoa apachen error logia ennen
 ![kuva](https://github.com/user-attachments/assets/d1e02e06-d470-4a48-a14d-97bd55da0fc0) 
 
 Tajusin virheen johtuneen luodessani index.html tiedoston väärään kansioon. Loin sen samalla komennolla kuin aiemmin, korjaten kansioinnin.
+Tällä kertaa curl löysi tiedon ja totesin, että tällä tapaa saa luotua ilman pääkäyttäjän oikeuksia muokattavan sivun localhost osoitteelle ilmeisesti koko palvelimelle.
+
+Suljin ensin isännän komennolla 'sudo a2dissite localhost' ja potkaisin demonia, testasin vielä onko localhost palannut normaaliksi.
+
+![kuva](https://github.com/user-attachments/assets/abce491f-3afe-4771-988d-07277bbcf283)
+
+'curl localhost' näytti taas lähdekoodia, eli totesin sivun suljetuksi. Tämän jälkeen poistin vielä luomani tiedostot, etten vahingossa kytke niitä päälle.
+
+![kuva](https://github.com/user-attachments/assets/f68c8ea3-d78d-435c-bd3d-c4499d99b014)
+
+En saanut poistettua localhost.conf tiedostoa, joten päätin asentaa koko apachen uudelleen.
+
+Käytin komentoja 'sudo apt-get purge apache2' ja sudo apt-get install apache2'
+
+Tiedosto ei poistunut, vaikka koko ohjelman poisti.
+
+![kuva](https://github.com/user-attachments/assets/90db5e06-81d2-4a09-83f6-66ee2be723ae)
+
+
+Lopulta sain tiedoston poistettua komennolla 'sudo rm -f  /etc/apache2/sites-available/localhost.conf'
+
+Tämän jälkeen asensin Apachen uudelleen, sillä olin poistanut kaiken turhan ja haitallisen.
+Palautin virtuaalikoneen yhteyden verkkoon.
+
+## Kotihakemistojen kautta asian tekeminen
+
+
+
 
 
 
