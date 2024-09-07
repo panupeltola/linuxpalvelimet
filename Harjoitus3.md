@@ -129,13 +129,13 @@ Palautin virtuaalikoneen yhteyden verkkoon.
 
 Käytin tähän tapaan T. Karvisen toista ohjetta (https://terokarvinen.com/2016/new-default-website-with-apache2-show-your-homepage-at-top-of-example-com-no-tilde/?fromSearch=apache)
 
-Loin ensin uuden konfigurointitiedoston komennolla 'sudo micro /etch/apache2/site-aviable/passeli.conf'
+Loin ensin uuden konfigurointitiedoston komennolla 'sudo micro /etc/apache2/sites-aviable/passeli.conf'
 
 Lisäsin sinne alla olevan konfiguraation erona hetki sitten huonosti tehtyyn tapaan, tällä kertaa sivu localhost ei ohjaa suoraan sivulle.
 
 ![kuva](https://github.com/user-attachments/assets/c0f9a0f2-c7b0-4035-97fc-08252517b126)
 
-Seuraavaksi aktivoin tämän sivun ja deaktivoin vakiosivun komennoilla 'sudo a2ensite passeli.conf' ja sudo a2dissite 000-default.conf'
+Seuraavaksi aktivoin tämän sivun ja deaktivoin vakiosivun komennoilla 'sudo a2ensite passeli.conf' ja 'sudo a2dissite 000-default.conf'
 Tämän jälkeen potkaisin demonia.
 
 Yritin mitä komento 'curl localhost' kertoo.
@@ -150,8 +150,67 @@ Kirjasin yksinkertaisen tekstin index.html tiedostoon ja koetan sivun toimivuude
 
 Totesin localhostin sivun toimivan.
 
-Seuraavaksi luon uuden isännän osoitteelle hattu.example.com. Aloitan luomalla sille konfiguraatiotiedoston.
-Teen sen komennolla 'sudo micro /etch/apache2/site-aviable/hattu.conf'
+Seuraavaksi loin uuden isännän osoitteelle hattu.example.com. Aloitin luomalla sille konfiguraatiotiedoston.
+Tein sen komennolla 'sudo micro /etc/apache2/sites-aviable/hattu.conf' Laadin ohjeen mukaisen konfiguraation.
+
+![kuva](https://github.com/user-attachments/assets/4eedf910-e9b0-4d59-b5cd-3546ae4083ec)
+
+Seuraavaksi aktivoin sivun ja loin sille sisällön määritettyyn sijaintiin.
+
+![kuva](https://github.com/user-attachments/assets/0b5af74b-5be4-4b9a-b116-52e5fb9fa670)
+
+
+Käytin HTML sivun tekemiseen myös T.Karvisen ohjetta. (https://terokarvinen.com/2016/new-default-website-with-apache2-show-your-homepage-at-top-of-example-com-no-tilde/?fromSearch=homepage)
+
+![kuva](https://github.com/user-attachments/assets/af46b2fd-b5fd-459a-9824-ea58367a1dda)
+
+Seuraavaksi potkaisin demonia ja katsoin miten käy kun menen sivulle hattu.example.com.
+
+
+![kuva](https://github.com/user-attachments/assets/c26677cf-1d69-4a98-9dcc-c2186c79f616)
+
+Sivu ei toiminut. Aloin selvittämään ongelmaa.
+
+Yritin seuraavaksi tehdä samat asiat uudelleen, mutta nimesin sivun, konfiguraation ja tiedoston nimellä hattu.example.com.
+
+![kuva](https://github.com/user-attachments/assets/a3c3b289-997c-4e86-b671-b6e2e7c78689)
+
+Tällä kertaa sivu toimi. Käytin testiin Karvisen sivulta löytynyttä komentoa 'curl -H 'Host: hattu.example.com' localhost.
+
+Totesin tehtävän onnistuneeksi.
+
+# e) HTML5
+
+Päätin liimata äsken tekemäni sivun sisällön aikaisemmin tekemäni public_html sivun koodiksi ja katsoa toimiiko se.
+
+
+![kuva](https://github.com/user-attachments/assets/d6b5d796-8e38-4074-82c0-e327af733c42)
+
+Sivu näytti rumalta, mutta se toimi.
+
+Alla vielä kuva lähdekoodista.
+
+![kuva](https://github.com/user-attachments/assets/1eae5827-5b6c-4bbb-aac1-6f168fdaab4a)
+
+
+# f) curl
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
