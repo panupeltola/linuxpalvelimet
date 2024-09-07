@@ -123,7 +123,41 @@ Lopulta sain tiedoston poistettua komennolla 'sudo rm -f  /etc/apache2/sites-ava
 Tämän jälkeen asensin Apachen uudelleen, sillä olin poistanut kaiken turhan ja haitallisen.
 Palautin virtuaalikoneen yhteyden verkkoon.
 
-## Kotihakemistojen kautta asian tekeminen
+## Parempi tapa
+
+7.9.2024 klo 20:20
+
+Käytin tähän tapaan T. Karvisen toista ohjetta (https://terokarvinen.com/2016/new-default-website-with-apache2-show-your-homepage-at-top-of-example-com-no-tilde/?fromSearch=apache)
+
+Loin ensin uuden konfigurointitiedoston komennolla 'sudo micro /etch/apache2/site-aviable/passeli.conf'
+
+Lisäsin sinne alla olevan konfiguraation erona hetki sitten huonosti tehtyyn tapaan, tällä kertaa sivu localhost ei ohjaa suoraan sivulle.
+
+![kuva](https://github.com/user-attachments/assets/c0f9a0f2-c7b0-4035-97fc-08252517b126)
+
+Seuraavaksi aktivoin tämän sivun ja deaktivoin vakiosivun komennoilla 'sudo a2ensite passeli.conf' ja sudo a2dissite 000-default.conf'
+Tämän jälkeen potkaisin demonia.
+
+Yritin mitä komento 'curl localhost' kertoo.
+
+![kuva](https://github.com/user-attachments/assets/b0a9424f-1c5c-425f-957d-cff3bd8b0f66)
+
+Sivua ei ole olemassa, sillä sitä ei ole luotu. Luon sen komennoilla 'mkdir /home/passeli/public_html' ja 'micro /home/passeli/public_html/index.html'
+
+Kirjasin yksinkertaisen tekstin index.html tiedostoon ja koetan sivun toimivuuden 'curl localhost' komennolla.
+
+![kuva](https://github.com/user-attachments/assets/7e1ae8b3-7bb2-415f-8acb-6c0c4884f296)
+
+Totesin localhostin sivun toimivan.
+
+Seuraavaksi luon uuden isännän osoitteelle hattu.example.com. Aloitan luomalla sille konfiguraatiotiedoston.
+Teen sen komennolla 'sudo micro /etch/apache2/site-aviable/hattu.conf'
+
+
+
+
+
+
 
 
 
