@@ -63,7 +63,7 @@ Viiva tarkoittaa, että tietoa ei ole saatavilla.
 - "-"  En löytänyt varmaa tietoa tälle tiedolle, mutta oletan sen olevan HTTP pyynnön otsikko
 - "Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0" HTTP otsikon selaimen itsestään ilmoittama tieto.
 
-# Etusivu uusiksi
+# c) Etusivu uusiksi
 
 Käytin tässä tehtävässä ohjeena ja pohjana T. Karvisen ohjetta "Name Based Virtual Hosts on Apache – Multiple Websites to Single IP Address" (https://terokarvinen.com/2018/04/10/name-based-virtual-hosts-on-apache-multiple-websites-to-single-ip-address/)
 
@@ -127,7 +127,7 @@ Palautin virtuaalikoneen yhteyden verkkoon.
 
 7.9.2024 klo 20:20
 
-Käytin tähän tapaan T. Karvisen toista ohjetta (https://terokarvinen.com/2016/new-default-website-with-apache2-show-your-homepage-at-top-of-example-com-no-tilde/?fromSearch=apache)
+Käytin tähän tapaan T. Karvisen toista ohjetta (https://terokarvinen.com/2016/new-default-website-with-apache2-show-your-homepage-at-top-of-example-com-no-tilde/)
 
 Loin ensin uuden konfigurointitiedoston komennolla 'sudo micro /etc/apache2/sites-aviable/passeli.conf'
 
@@ -177,6 +177,9 @@ Yritin seuraavaksi tehdä samat asiat uudelleen, mutta nimesin sivun, konfiguraa
 
 Tällä kertaa sivu toimi. Käytin testiin Karvisen sivulta löytynyttä komentoa 'curl -H 'Host: hattu.example.com' localhost.
 
+![kuva](https://github.com/user-attachments/assets/9835fde1-50dc-4da5-aaf5-12e90b2fadca)
+
+
 Totesin tehtävän onnistuneeksi.
 
 # e) HTML5
@@ -194,6 +197,27 @@ Alla vielä kuva lähdekoodista.
 
 
 # f) curl
+
+Curlilla sai haettua sivun koodin. Esimierkkinä localhost, sillä koodi on lyhyt.
+
+![kuva](https://github.com/user-attachments/assets/a002184f-03f6-425d-8751-83538658f74c)
+
+
+Komennolla 'curl -I  https://bandcamp.com' näin sivun koodia otsikkotasolla. Tämä johtuu siitä, että komento 'curl -I' ei lähetä GET pyyntöä vaan HEAD pyynnön. Eli vastaukset ovat sivun otsikkoja ja niiden arvoja. (https://stackoverflow.com/questions/24563889/curl-i-and-curl-i-returning-different-results)
+
+![kuva](https://github.com/user-attachments/assets/e1f6867c-2bc9-4e24-b1c0-54dff29530ec)
+
+Tästä näen esimerkiksi käytetyn protokollan, aineiston tyypin, palvelimen ajan, sivun sisällön ja evästetietoja.
+
+# Lähteet
+
+Apache Software Foundation, 2024, Name-based Virtual Host Support, https://httpd.apache.org/docs/2.4/vhosts/name-based.html, luettu 7.9.2024
+Apache Software Foundation, 2024, Log Files, https://httpd.apache.org/docs/current/logs.html, Luettu 7.9.2024
+T. Karvinen, 2018, Name Based Virtual Hosts on Apache – Multiple Websites to Single IP Address, https://terokarvinen.com/2018/04/10/name-based-virtual-hosts-on-apache-multiple-websites-to-single-ip-address/, luettu 7.9.2024
+T. Karvinen, 2016, New Default Website with Apache2 – Show your homepage at top of example.com, no tilde, https://terokarvinen.com/2016/new-default-website-with-apache2-show-your-homepage-at-top-of-example-com-no-tilde/, luettu 7.9.2024
+
+
+
 
 
 
