@@ -195,6 +195,13 @@ Alla vielä kuva lähdekoodista.
 
 ![kuva](https://github.com/user-attachments/assets/1eae5827-5b6c-4bbb-aac1-6f168fdaab4a)
 
+Päivitys 11.9.2024:
+
+Tiedosto validoitui osoitteessa https://validator.w3.org/
+
+![kuva](https://github.com/user-attachments/assets/7adca1b4-c154-4afe-947b-f673ce230e49)
+
+
 
 # f) curl
 
