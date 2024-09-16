@@ -138,12 +138,35 @@ Komennolla 'sudo ufw status' näin, että sekä portti 22 ja 80 olivat nyt avoin
 
 ![kuva](https://github.com/user-attachments/assets/ad975555-e7f1-4c41-a365-57f7d8091875)
 
+# c) Hei maailma 
+
 
 Asensin seuraavaksi Apache2 palvelimen virtuaalikoneelle komennolla 'sudo apt-get install apache2'
 
-Katsoin seuraavaksi virtuaalikoneeni IP-osoitetta Firefox selaimella ja päädyin Apachen tuttuun aloitusikkunaan. Totesin siis ensiaskeleiden olevan valmiit.
+Katsoin seuraavaksi virtuaalikoneeni IP-osoitetta Firefox selaimella ja päädyin Apachen tuttuun aloitusikkunaan. Totesin siis asennuksen onnistuneen.
 
 ![kuva](https://github.com/user-attachments/assets/98787ed1-3313-48fb-8d56-c289f20c74f5)
+
+Yritin seuraavaksi muuttaa sivun tekstiä komennolla 'echo Hello world, site is under construction! |sudo tee /var/www/html/index.html'
+
+![kuva](https://github.com/user-attachments/assets/0c87f496-0ea5-482a-81d0-4cd0f6c18b7c)
+
+Teksti oli muuttunut Firefoxilla.
+
+Katsoin vielä näkyykö teksti puhelimellani.
+
+![Screenshot_20240916-171135](https://github.com/user-attachments/assets/7bf658f8-0d49-43c4-bc86-88f07692aaba)
+
+Teksti näkyi, vaikkei sivu ollutkaan häävi vielä.
+
+Totesin tehtävän tehdyksi. Jätin Dropletin päälle, josko vaikka lokeihin tarttuisi jotain mielenkiintoista.
+
+# Lähteet:
+
+
+
+
+
 
 
 
