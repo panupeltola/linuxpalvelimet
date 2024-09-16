@@ -26,6 +26,16 @@
 - Kun kriittisimmät asiat, eli palomuuri ja root käyttäjän poistaminen on tehty, pitää vielä päivittää paketit
 - Susannan ohjeessa oli vielä Teron ohjeen komentojen 'sudo apt-get update' ja 'sudo apt-get upgrade' lisäksi komento 'sudo apt-get dist-upgrade' jolla päivitetään myös käyttöjärjestelmä.
 
+# Ympäristö:
+- Windows 10 Education 22H2
+- Intel Core i7-10770K (AMD 64)
+- Nvidia GeForce 3080
+- 32 GB RAM
+- VirtualBox 7.0.20
+
+## Virtuaalikone
+- Debian 12
+
 
 # a) Vuokraa oma virtuaalipalvelin haluamaltasi palveluntarjoajalta
 
@@ -162,6 +172,10 @@ Teksti näkyi, vaikkei sivu ollutkaan häävi vielä.
 Totesin tehtävän tehdyksi. Jätin Dropletin päälle, josko vaikka lokeihin tarttuisi jotain mielenkiintoista.
 
 # Lähteet:
+
+- T. Karvinen, 2017, First Steps on a New Virtual Private Server – an Example on DigitalOcean and Ubuntu 16.04 LTS, https://terokarvinen.com/2017/first-steps-on-a-new-virtual-private-server-an-example-on-digitalocean/, luettu 16.9.2024
+- S. Lehto, 2022, Teoriasta käytäntöön pilvipalvelimen avulla, https://susannalehto.fi/2022/teoriasta-kaytantoon-pilvipalvelimen-avulla-h4/, luettu 16.9.2024
+- Debian wiki, 2023, SystemGroups, https://wiki.debian.org/SystemGroups, luettu 16.9.2024
 
 
 
