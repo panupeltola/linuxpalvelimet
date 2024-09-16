@@ -29,6 +29,8 @@
 
 # a) Vuokraa oma virtuaalipalvelin haluamaltasi palveluntarjoajalta
 
+16.9.2024 klo 16:00
+
 Olin jo luonut aiemmin tilin DigitalOceaniin ja lisänny sinne varoja. Aloitin luomalla sinne virrtuaalikoneen, eli Dropletin.
 Loin sen Amsterdamiin
 
@@ -127,6 +129,28 @@ Lopuksi päivitin vielä kaikki paketit sekä käyttöjärjestelmän komennoilla
 'sudo apt-get update'
 'sudo apt-get upgrade'
 'sudo apt-get dist-upgrade'
+
+Tämän jälkeen avasin vielä palomuuriin portin http-yhteyksille komennolla 'sudo ufw allow 80/tcp' 
+
+![kuva](https://github.com/user-attachments/assets/9ba8a736-505c-41e3-9281-c93c02acef52)
+
+Komennolla 'sudo ufw status' näin, että sekä portti 22 ja 80 olivat nyt avoinna
+
+![kuva](https://github.com/user-attachments/assets/ad975555-e7f1-4c41-a365-57f7d8091875)
+
+
+Asensin seuraavaksi Apache2 palvelimen virtuaalikoneelle komennolla 'sudo apt-get install apache2'
+
+Katsoin seuraavaksi virtuaalikoneeni IP-osoitetta Firefox selaimella ja päädyin Apachen tuttuun aloitusikkunaan. Totesin siis ensiaskeleiden olevan valmiit.
+
+![kuva](https://github.com/user-attachments/assets/98787ed1-3313-48fb-8d56-c289f20c74f5)
+
+
+
+
+
+
+
 
 
 
