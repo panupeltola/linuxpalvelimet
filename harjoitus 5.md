@@ -61,7 +61,25 @@ Viimeinen sivu.
 
 ![kuva](https://github.com/user-attachments/assets/5b757b00-e4a4-462e-9c3c-b6ed5d7c01f3)
 
-14. Seuraavaksi piti saada tiedostot host koneelle. Päätin käyttää tässä Teron ohjeessaan mainitsemaa 'scp' komentoa. Halusin kuitenkin ensin ymmärtää mitä komento tekee ennen ajamista.
+14. Seuraavaksi piti saada tiedostot host koneelle. Päätin käyttää tässä Teron ohjeessaan mainitsemaa 'scp -r kansio/ tero@example.com:public_html/' komentoa. Halusin kuitenkin ensin ymmärtää mitä komento tekee ennen ajamista.
+
+- scp kutsuu prosessin
+- '-r'kopioi kansion rekursiivisesti
+- seuraavaksi määritetään haluttu kansio
+- lopuksi vielä kohdelaite ja kaksoispisteiden jälkeen kohdekansio.
+
+15. Tein tämän ja katsoin miten käy.
+
+![kuva](https://github.com/user-attachments/assets/ccb0b368-b400-4b07-b91f-d0a33fd42ce8)
+
+16. Näin heti, että oikeat tiedostot ovat ilmeisesti johonkin siirtyneet. Katsoin seuraavaksi host koneelta näkyvätkö ne siellä.
+
+![kuva](https://github.com/user-attachments/assets/63e66bc4-fd17-43e0-8439-3ce41bd95700)
+
+Sekä tiedostot olivat paikallaan. Huomasin myös, että tämän lisäksi koko kansio tuli mukaan.
+
+17. Seuraavaksi aloin luomaan Name Based Hosting raktaisuja.
+
 
 
 
