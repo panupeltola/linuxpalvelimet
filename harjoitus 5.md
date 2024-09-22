@@ -53,6 +53,19 @@ Viimeinen sivu.
 7. Kun olin tässä onnistunut koitin vielä HTML tiedostojen välillä siirtymistä. Tämä ei toiminut, sillä tiedostojen päätteeksi ei ollut .html päätettä.
 8. Tulevassa ratkaisussa kuitenkin liikenne ohjataan Name Based Hostingin avulla. Päätin siis yrittää saisinko tämän toimimaan oikealla koneella.
 
+9. Yritin ottaa yhteyttä virtuaalikoneeseeni Windows käyttöjärjestelmän kautta, mutta huomasin, ettei koneen fingerprint ole sama kuin aiemmin raportoimani.
+10. Halusin varmistaa, ettei kyseessä ole minkään sortin MITM hyökkäys ja avasin Debianin, jolla koneeseen oli jo liitytty nähdäkseni tuleeko tästä huomautusta.
+11. Pääsin kirjautumaan virtuaalikoneelleni ilman mitään häiriöilmoitusta. Tutkin miten saan ECDSA julkisen avaimeni näkymään ja löysin StackOverFlowsta vastaukseksi komennon 'ssh-keygen -l -f /etc/ssh/ssh_host_ecdsa_key.pub'. Fingerprint vastasi verkkokoneen antamaa vastausta. Syytä sille miksi julkinen avain on muuttunut en tiedä.
+12. Syötettyäni sen virtuaalikoneeseen alkoi homma taas pelittämään. Päätin tässä vaiheessa myös tehdä hiukan taustatyötä ja tehdä HTML dokumentit Debianilleni.
+13. Tämän tehtyäni loin kansion Host koneelle uusille sivuille sen /home/passeli hakemistoon komennolla 'sudo mkdir /home/passeli/public_site'
+
+![kuva](https://github.com/user-attachments/assets/5b757b00-e4a4-462e-9c3c-b6ed5d7c01f3)
+
+14. Seuraavaksi piti saada tiedostot host koneelle. Päätin käyttää tässä Teron ohjeessaan mainitsemaa 'scp' komentoa. Halusin kuitenkin ensin ymmärtää mitä komento tekee ennen ajamista.
+
+
+
+
 
 
 
