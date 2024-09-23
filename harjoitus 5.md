@@ -80,6 +80,81 @@ Sekä tiedostot olivat paikallaan. Huomasin myös, että tämän lisäksi koko k
 
 17. Seuraavaksi aloin luomaan Name Based Hosting raktaisuja.
 
+Päivä ehti vaihtua ja jatkoin tehtävää 23.9.2024 klo 17:10.
+
+18. Yritin ensin saada yhden sivun toimimaan ja käytin siihen ohjeena aiemmin tekemääni tehtävää.
+
+![kuva](https://github.com/user-attachments/assets/db9835b1-b344-44e8-a5ab-81933a74e21a)
+
+19. Loin VirtualHost configuraation ja tämän jälkeen nimesin vielä olemassa olevan main.html tiedoston index.html muotoon omaa työtäni helpottaakseni. Tein sen komennolla 'mv main.html index.html'
+
+20. Tämän jälkeen otin sivun käyttöön komennolla 'sudo a2ensite panupeltola.conf' ja potkaisin demonia komennolla 'sudo systemctl restart apache2'
+
+![kuva](https://github.com/user-attachments/assets/4c960aa5-aa5d-4862-8721-35aa310ed455)
+
+21. Mentyäni sivulle sain 403 virheen. Muisitin aiemmilta oppitunneilta, että tämä voi johtua puutteellisista käyttöoikeuksista. Ajoin Teron luentomateriaalista komennon 'chmod ugo+x $HOME $HOME/public_html/'
+
+![kuva](https://github.com/user-attachments/assets/d6780d2a-32c8-4d4d-a620-a00a3a5d5f8e)
+
+Mestariteos areenalla.
+
+22. Magnum Opukseni oli nyt nähtävillä. Vielä piti ratkaista sivujen välinen linkittäminen.
+
+![kuva](https://github.com/user-attachments/assets/cc10b081-2c36-4000-9347-a426814c8135)
+
+23. Viedessäni hiiren linkin päälle huomasin, että linkkini on aivan liian pitkä. Koitin siis yksinkertaisesti muokata HTML tiedostoja siten, että 'href' komento viittaa vain juuressa olevaan tiedostoon esim "/minusta.html"
+
+![kuva](https://github.com/user-attachments/assets/c2c52116-1a77-4ba7-acbb-773cc321f431)
+
+Ensimmäinen yritys lähdekoodilla näytti tältä, potkaisin demonia tämän jälkeen ja päivitin sivuni.
+
+![kuva](https://github.com/user-attachments/assets/d9f220f5-6cd8-41fe-94da-1826d34fbd0e)
+
+Linkki toimi, mutta sivu ei. Päätin ensin korjata muut HTML tiedostot ennen jatkamista.
+
+![kuva](https://github.com/user-attachments/assets/e9f817a9-d37e-428f-a57f-07c6c4982fc9)
+
+minusta.html linkit korjattu
+
+24. Tässä vaiheessa minuun iski tajuaminen, että olin unohtanut linkkien perästä ".html" päätteen. Päätin yrittää tätä ennen pidemmälle etenemistä.
+
+![kuva](https://github.com/user-attachments/assets/692f0ad7-a0c0-416d-a1d5-fa5bd021247c)
+
+25. Nyt linkki toimi. Korjasin kaikki tiedostot siten, että ne linkittyivät keskenään.
+
+![kuva](https://github.com/user-attachments/assets/38487c9a-a1d9-4e12-b723-e8d420bbf954)
+
+Yhteystiedot.html korjattu.
+
+![kuva](https://github.com/user-attachments/assets/f700931a-0835-4997-8b30-d0b0a088aa71)
+
+Minusta.html korjattu.
+
+26. Koitin vielä kaikkien välisten sivujen toimivuuden. Ihmettelin jo miksi ei toiminut, kunnes muistin etten ollut potkaissut demonia. Tein sen ja yritin uudelleen.
+
+27. Minusta ja Yhteystietoni välillä linkki toimi ja myös index.html eteenpäin. Tajusin hetken mietittyäni, että olin tosiaan nimennyt main.html uudelleen index.html nimelle ja olin unohtanut vanhan nimen kohteelle.
+
+28. Korjasin tiedostot, sama kuin aiemmissa kuvissa, mutta mainin tilalla index.
+
+29. Viimeinen potku demonille ja toiveet olivat korkealla.
+
+30. Tällä kertaa kaikki toimivat. Ja totesin myös ehdon ilman pääkäyttäjän oikeuksia muokkaamisesta toimivan, sillä sen verran monta kertaa näitä komennolla 'micro tiedosto.html' muokkasin.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
 
 
 
