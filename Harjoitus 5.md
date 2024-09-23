@@ -167,6 +167,10 @@ Yllätyin, kun linux-kurssi.panupeltola.com näytti sivun vanhaa päivittämät�
 
 Myös CNAME tietue avaa vanhan version. Pääasia kuitenkin, että molemmat tietueet yhdistivät oikeaan osoitteeseen. Tähän voisi varmasti tehdä helposti sivuston siirtoja Name Based Virtual Hostingilla.
 
+Päivitys 23.9.2024 klo 19:34.
+
+Jäin miettimään miksi sivu näytti vielä loppujen tehtävien tekemisenkin jälkeen väärin. Totesin, että tällä tapaa tulevat kutsut eivät osu VirtualHostin haaviin vaan näyttävät oletussivuni. Korjaan tämän ongelman paremmalla ajalla.
+
 # C) Pubkey
 
 1. Seuraavassa tehtävässä loin avainparin, jolla hallitsisin jatkossa virtuaalikonetta. Käytin tähän DigitalOceanin ohjetta (https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-debian-11)
