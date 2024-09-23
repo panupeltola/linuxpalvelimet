@@ -159,6 +159,40 @@ Myös CNAME tietue avaa vanhan version. Pääasia kuitenkin, että molemmat tiet
 
 # C) Pubkey
 
+1. Seuraavassa tehtävässä loin avainparin, jolla hallitsisin jatkossa virtuaali konetta. Käytin tähän DigitalOceanin ohjetta (https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-debian-11)
+
+![kuva](https://github.com/user-attachments/assets/5a99d42d-0cf7-4dfd-9f67-bedc559cc132)
+
+Loin avainparin komennolla 'ssh-keygen' ja laadin sille salasanan.
+
+2. Todettuani, että 'ssh-copy-id' on helpoin komento saada avain siirrettyä host koneelle käytin sitä ja kirjotin salasanani koneelle.
+
+![kuva](https://github.com/user-attachments/assets/7aa79903-9d6b-45e2-a06d-6481a3164afc)
+
+3. Tämän jälkeen yritin kirjautua koneelle.
+
+![kuva](https://github.com/user-attachments/assets/21036912-2102-4a4a-bdc3-0eec836772c8)
+
+Debian kysyi äsken asettamaani passcodea, kirjoitin sen sisään ja pääsin koneelle ilman vanhaa salasanaa.
+
+4. Lopuksi halusin vielä sulkea mahdollisuuden kirjautua salasanalla. Tein sen muokkaamalla ssh konfiguraatiotiedostoa komennolla 'sudo micro /etc/ssh/sshd_config'
+
+![kuva](https://github.com/user-attachments/assets/2a689951-c031-475e-877b-1d4c762f6c6e)
+
+Salasanatodennus oli jo pois päältä, eli sitä ei tarvinnut enää erikseen muokata. Kirjauduin tässä vaiheessa virtuaalikoneelta ulos, sillä sen työ oli tehty.
+
+# d) DNS
+
+## A)
+
+
+
+
+
+
+
+
+
 
 
 
