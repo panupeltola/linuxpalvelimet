@@ -1,5 +1,15 @@
 # Nimekäs
 
+# Ympäristö:
+- Windows 10 Education 22H2
+- Intel Core i7-10770K (AMD 64)
+- Nvidia GeForce 3080
+- 32 GB RAM
+- VirtualBox 7.0.20
+
+## Virtuaalikone
+- Debian 12
+
 # a) Kotisivu
 
 1. Aloitin luomalla kolme yksinkertaista HTML sivua.
