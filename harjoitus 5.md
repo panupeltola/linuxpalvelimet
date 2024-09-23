@@ -17,7 +17,7 @@ Sivu Firefox selaimella avattuna.
 
 4. Seuraavaksi halusin vielä luoda linkit kahteen tulevaan sivuuni. Tein ne yksinkertaisella linkillä 'href' komennolla.
 
-'Lopulline sivu alla:
+'''Lopullinen sivu alla:
 <!doctype html>
 <html>
 <head>
@@ -32,7 +32,7 @@ Sivu Firefox selaimella avattuna.
     <a href="www.panupeltola.com/yhteystiedot">Yhteystietoni </a>
     
 </body>
-</html>'
+</html>'''
 
 5. Koitin vielä validoida sivun ennen kuin menen eteenpäin. Linkkejä en voi testata, sillä tiedostoja ei ole vielä luotu.
 
