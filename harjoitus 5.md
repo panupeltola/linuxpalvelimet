@@ -1,6 +1,6 @@
 # Nimekäs
 
-#a) Kotisivu
+# a) Kotisivu
 
 1. Aloitin luomalla kolme yksinkertaista HTML sivua.
 2. Käytin ohjeena Tero Karvisen ohjetta yksinkertaisen HTML5 sivun luomiseen (https://terokarvinen.com/2012/short-html5-page/)
