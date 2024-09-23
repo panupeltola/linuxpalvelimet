@@ -17,22 +17,9 @@ Sivu Firefox selaimella avattuna.
 
 4. Seuraavaksi halusin vielä luoda linkit kahteen tulevaan sivuuni. Tein ne yksinkertaisella linkillä 'href' komennolla.
 
-'''Lopullinen sivu alla:
-<!doctype html>
-<html>
-<head>
-	<title>Panun ihmeellinen maailma</title>
-	<meta charset="utf-8" />
-</head>
-<body>
-	<h1>Tässä testataan sivun toimivuutta</h1>
-	<p>Näyttäisi toimivan</p>
-   <p><img src="thumbs-up.jpg" alt="Eveyrthing is working" style="width:800px;height:600px;"> </p>  
-    <a href="www.panupeltola.com/minusta">Minusta </a>
-    <a href="www.panupeltola.com/yhteystiedot">Yhteystietoni </a>
-    
-</body>
-</html>'''
+Lopullinen sivu alla:
+
+![kuva](https://github.com/user-attachments/assets/0acf80d5-5348-457d-9ba6-855ad5637a0a)
 
 5. Koitin vielä validoida sivun ennen kuin menen eteenpäin. Linkkejä en voi testata, sillä tiedostoja ei ole vielä luotu.
 
@@ -139,6 +126,42 @@ Minusta.html korjattu.
 29. Viimeinen potku demonille ja toiveet olivat korkealla.
 
 30. Tällä kertaa kaikki toimivat. Ja totesin myös ehdon ilman pääkäyttäjän oikeuksia muokkaamisesta toimivan, sillä sen verran monta kertaa näitä komennolla 'micro tiedosto.html' muokkasin.
+31. Totesin siis tehtävän onnistuneen.
+
+# B) Alidomain
+
+23.9.2024 18:26
+
+## CNAME vai A tietue
+- CNAME (Canonical name) ohjaa aina sivulle, muttei IP-osoitteeseen
+- Käytetään helpottamaan usean tietueen hallintaa
+- A-tietua antaa enemmän vapautta ja mahdollistaa mihin tahansa liikenteen ohjaamisen
+
+1. Aloitin lukemalla mitä CNAME tietue tarkoittaa. Se ohjaa yhdestä osoitteesta toiseen, kuitenkin aina verkko-osoitteeseen eikä IP-osoitteeseen. Tällä helpotetaan kahden erillisen tietueen ylläpitämistä. (https://www.cloudflare.com/learning/dns/dns-records/dns-cname-record/)
+2. Seuraavaksi lähdin metsästämään NameCheapin palvelusta alidomainin luontia.
+3. Löysin aiheesta videon NameCheapin sivulta ja päätin ensin yrittää CNAME tietueen luontia minusta.html sivulle.
+
+![kuva](https://github.com/user-attachments/assets/3e771f07-bf2e-4815-a9bd-54798105f0af)
+
+Tietue luotiinn lisäämällä "Recordin" "Host" osaan haluttu alku. Tässä tapauksessa lisäsin "etusivu".
+
+Lisäsin myös A-tietueen joka osoittaa virtuaalikoneeseen.
+
+![kuva](https://github.com/user-attachments/assets/2794096b-3086-43c6-acf9-19ebe199dda3)
+
+Koitin tietueita heti tehtävän tehtyäni.
+
+![kuva](https://github.com/user-attachments/assets/f30e0b57-d301-4830-9107-658447a943c2)
+
+Yllätyin, kun linux-kurssi.panupeltola.com näytti sivun vanhaa päivittämätöntä versiota. Oletan tämän johtuvan NameCheapin vanhasta kopiosta.
+
+Myös CNAME tietue avaa vanhan version. Pääasia kuitenkin, että molemmat tietueet yhdistivät oikeaan osoitteeseen. Tähän voisi varmasti tehdä helposti sivuston siirtoja Name Based Virtual Hostingilla.
+
+# C) Pubkey
+
+
+
+
 
 
 
