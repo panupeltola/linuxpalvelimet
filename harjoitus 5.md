@@ -42,7 +42,7 @@ Viimeinen sivu.
 
 9. Yritin ottaa yhteyttä virtuaalikoneeseeni Windows käyttöjärjestelmän kautta, mutta huomasin, ettei koneen fingerprint ole sama kuin aiemmin raportoimani.
 10. Halusin varmistaa, ettei kyseessä ole minkään sortin MITM hyökkäys ja avasin Debianin, jolla koneeseen oli jo liitytty nähdäkseni tuleeko tästä huomautusta.
-11. Pääsin kirjautumaan virtuaalikoneelleni ilman mitään häiriöilmoitusta. Tutkin miten saan ECDSA julkisen avaimeni näkymään ja löysin StackOverFlowsta vastaukseksi komennon 'ssh-keygen -l -f /etc/ssh/ssh_host_ecdsa_key.pub'. Fingerprint vastasi verkkokoneen antamaa vastausta. Syytä sille miksi julkinen avain on muuttunut en tiedä.
+11. Pääsin kirjautumaan virtuaalikoneelleni ilman mitään häiriöilmoitusta. Tutkin miten saan ECDSA julkisen avaimeni näkymään ja löysin StackOverFlowsta vastaukseksi komennon 'ssh-keygen -l -f /etc/ssh/ssh_host_ecdsa_key.pub'. Fingerprint vastasi verkkokoneen antamaa vastausta. Syytä sille miksi julkinen avain on muuttunut en tiedä. (https://stackoverflow.com/questions/10060530/what-command-do-i-use-to-see-what-the-ecdsa-key-fingerprint-of-my-server-is)
 12. Syötettyäni sen virtuaalikoneeseen alkoi homma taas pelittämään. Päätin tässä vaiheessa myös tehdä hiukan taustatyötä ja tehdä HTML dokumentit Debianilleni.
 13. Tämän tehtyäni loin kansion Host koneelle uusille sivuille sen /home/passeli hakemistoon komennolla 'sudo mkdir /home/passeli/public_site'
 
@@ -117,9 +117,9 @@ Yhteystiedot.html korjattu.
 
 Minusta.html korjattu.
 
-26. Koitin vielä kaikkien välisten sivujen toimivuuden. Ihmettelin jo miksi ei toiminut, kunnes muistin etten ollut potkaissut demonia. Tein sen ja yritin uudelleen.
+26. Koitin vielä kaikkien välisten sivujen toimivuuden. Ihmettelin jo miksi ei toiminut, kunnes muistin, etten ollut potkaissut demonia. Tein sen ja yritin uudelleen.
 
-27. Minusta ja Yhteystietoni välillä linkki toimi ja myös index.html eteenpäin. Tajusin hetken mietittyäni, että olin tosiaan nimennyt main.html uudelleen index.html nimelle ja olin unohtanut vanhan nimen kohteelle.
+27. minusta.html ja yhteystiedot.html välillä linkki toimi ja myös index.html eteenpäin. Tajusin hetken mietittyäni, että olin nimennyt main.html uudelleen index.html nimelle ja olin unohtanut vanhan nimen kohteelle.
 
 28. Korjasin tiedostot, sama kuin aiemmissa kuvissa, mutta mainin tilalla index.
 
@@ -139,7 +139,7 @@ Minusta.html korjattu.
 
 1. Aloitin lukemalla mitä CNAME tietue tarkoittaa. Se ohjaa yhdestä osoitteesta toiseen, kuitenkin aina verkko-osoitteeseen eikä IP-osoitteeseen. Tällä helpotetaan kahden erillisen tietueen ylläpitämistä. (https://www.cloudflare.com/learning/dns/dns-records/dns-cname-record/)
 2. Seuraavaksi lähdin metsästämään NameCheapin palvelusta alidomainin luontia.
-3. Löysin aiheesta videon NameCheapin sivulta ja päätin ensin yrittää CNAME tietueen luontia minusta.html sivulle.
+3. Löysin aiheesta videon NameCheapin sivulta ja päätin ensin yrittää CNAME tietueen luontia minusta.html sivulle. (https://www.namecheap.com/support/knowledgebase/article.aspx/10336/2254/video-how-to-create-subdomain-for-my-domain-via-namecheap-account/)
 
 ![kuva](https://github.com/user-attachments/assets/3e771f07-bf2e-4815-a9bd-54798105f0af)
 
@@ -159,7 +159,7 @@ Myös CNAME tietue avaa vanhan version. Pääasia kuitenkin, että molemmat tiet
 
 # C) Pubkey
 
-1. Seuraavassa tehtävässä loin avainparin, jolla hallitsisin jatkossa virtuaali konetta. Käytin tähän DigitalOceanin ohjetta (https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-debian-11)
+1. Seuraavassa tehtävässä loin avainparin, jolla hallitsisin jatkossa virtuaalikonetta. Käytin tähän DigitalOceanin ohjetta (https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-debian-11)
 
 ![kuva](https://github.com/user-attachments/assets/5a99d42d-0cf7-4dfd-9f67-bedc559cc132)
 
@@ -183,7 +183,89 @@ Salasanatodennus oli jo pois päältä, eli sitä ei tarvinnut enää erikseen m
 
 # d) DNS
 
-## A)
+23.9.2024 klo 18:48
+
+## Komennot:
+
+- Host suorittaa yksinkertaisen DNS haun ja noutaa verkko-osoitteen nimeen liitetyt IP-osoitteet
+- Dig hakee sitä vastaavat palvelimet DNS-haun avulla, tyypillinen vastaus kertoo palvelimen, paketin TTL tiedon (time to live), tyypin (IN on internet) ja tietueentyypin (esimekriksi A tietue)
+
+## A) panupeltola.com
+
+![kuva](https://github.com/user-attachments/assets/70b2c7f2-19d4-45d7-91c9-81e57ff297e1)
+
+'host panupeltola.com' palautti vastaukseksi verkkokoneen IP-osoitteen.
+
+'dig panupeltola.com' palautti enemmän tietoa.
+
+![kuva](https://github.com/user-attachments/assets/d8b7fa45-bc1c-4a2e-a66f-b8aee5b8509c)
+
+Vastauksesta näkyy, että osoitteella on A-tietue  omaan verkkokoneeseeni. Palvelimen tiedot hain Who.is palvelun kautta ja vastannut DNS-palvelin on rekisteröity APNIC:ille (Regional Internet registry for the Asia Pacific region). Eli kaukaa haki palvelin. Paketin TTL oli 272.
+
+
+
+![kuva](https://github.com/user-attachments/assets/c43ca39d-6f4e-43b1-a633-0e9856ce9eae)
+
+
+## B) ottosbarbershop.fi
+
+Seuraavaksi päätin tutkia parturini kotisivut.
+
+![kuva](https://github.com/user-attachments/assets/6624abe0-36f1-4f86-b1bf-1d5f7027e791)
+
+'host' antoi yhden vastauksen.
+
+Tämän vastauksen omistaa ripe ncc, joka vaikuttaa olevan euroopan IP-numeroista vastaava elin
+
+![kuva](https://github.com/user-attachments/assets/266fcd23-9c70-4861-a5ed-edb9c8f1dfdf)
+
+Tällä haulla näen, että IP-osoite on sama, mutta osoitteella on lisäksi CNAME tietue, jolla saadaan myös www. alku toimimaan.
+DNS palvelin on sama. Paketin TTL oli erittäin korkea (1754)
+
+## C) jimms.fi
+
+Viimeisenä katsoin vielä Jimm's PC storen tiedot.
+
+'host jimms.fi' palautti kolme IPv4 osoitetta, mutta myös kolme IPv6 osoitetta.
+
+![kuva](https://github.com/user-attachments/assets/9e9fbb94-32d8-4e66-825e-8056e378b9a4)
+
+Kaikki nämä osoitteet omistaa CloudFlare.
+
+'dig jimms.fi' palautti kolme A-tietuetta.
+
+![kuva](https://github.com/user-attachments/assets/725ec75f-ed28-4df2-b373-466d69058141)
+
+Yhtään CNAME tietuetta esim www etuliitteeseen ei ollut. Tällä haulla ei myöskään näkynyt IPv6 haut.
+Syytä tälle en keksi.
+
+Yleisesti huomiona, että kaikilla yhteen hostiin liittyvillä tietueilla oli aina sama TTL.
+
+# Lähteet:
+
+1. T. Karvinen, 2012 Short HTML5 Page, https://terokarvinen.com/2012/short-html5-page/, luettu 22.9.2024
+2. W3Schools, HTML Links, https://www.w3schools.com/html/html_links.asp, luettu 22.9.2024
+3. W3Schools, HTML Images, https://www.w3schools.com/html/html_images.asp, luettu 22.9.2024
+4. StackOverflow, What command do I use to see what the ECDSA key fingerprint of my server is?, https://stackoverflow.com/questions/10060530/what-command-do-i-use-to-see-what-the-ecdsa-key-fingerprint-of-my-server-is, luettu 22.9.2024
+5. T.Karvinen, 2024 Linux Palvelimet 2024 alkusyksy, https://terokarvinen.com/linux-palvelimet/, luettu 23.9.2024
+6. Cloudflare, What is a DNS CNAME record?, https://www.cloudflare.com/learning/dns/dns-records/dns-cname-record/, luettu 23.9.2024
+7. J. Camisso, How to Set Up SSH Keys on Debian 11, https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-debian-11, luettu 23.9.2024
+8. Phoenixnap, 2024, dig Command in Linux with Examples, https://phoenixnap.com/kb/linux-dig-command-examples, luettu 23.9.2024
+9. NameCheap, How to create subdomain for my domain via Namecheap account, https://www.namecheap.com/support/knowledgebase/article.aspx/10336/2254/video-how-to-create-subdomain-for-my-domain-via-namecheap-account/, katsottu 23.9.2024
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
