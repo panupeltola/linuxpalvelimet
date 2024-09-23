@@ -252,6 +252,8 @@ Yleisesti huomiona, että kaikilla yhteen hostiin liittyvillä tietueilla oli ai
 7. J. Camisso, How to Set Up SSH Keys on Debian 11, https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-debian-11, luettu 23.9.2024
 8. Phoenixnap, 2024, dig Command in Linux with Examples, https://phoenixnap.com/kb/linux-dig-command-examples, luettu 23.9.2024
 9. NameCheap, How to create subdomain for my domain via Namecheap account, https://www.namecheap.com/support/knowledgebase/article.aspx/10336/2254/video-how-to-create-subdomain-for-my-domain-via-namecheap-account/, katsottu 23.9.2024
+10. 'man host'
+11. 'man dig'
 
 
 
