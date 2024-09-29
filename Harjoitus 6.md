@@ -198,6 +198,9 @@ Käytin tehtävän tekemiseen Tero Karvisen ohjetta (https://terokarvinen.com/20
 32. Lisäsin ohjeen mukaisen polun juureen ja "import os" tiedoston alkuun.
 33. Ajoin komennon '.manage.py collectstatic'
 34. Tästä huolimatta sivun ulkoasu ei toiminut, vaikka ajon jälkeen tuli ilmotus 127 staattisen tiedoston kopioimisesta. Tätä tilannetta ei myöskään muuttanut Apachen uudelleen käynnistäminen.
+
+![kuva](https://github.com/user-attachments/assets/3d372fc2-bb07-44f8-b281-5ab5abfe7dd8)
+ 
 35. Päätin jättää asian sellaseen keskeneräiseksi ja kysyä asiasta mahdollisuuden tullessa, sillä pelkään korjaamalla rikkovani tilannetta entisestään. Ja logiikka toimii.
 
 # Lähteet:
