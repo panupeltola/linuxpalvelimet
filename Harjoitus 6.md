@@ -14,9 +14,9 @@
 
 Teen tehtävän käyttäen Tero Karvisen ohjetta (https://terokarvinen.com/2022/django-instant-crm-tutorial/) 
 
-Puhun jatkossa verkossa olevast virtuaalikoneestani nimellä host ja paikallisesta virtuaalikoneestani nimellä local
+29.9.2024 klo 10:06
 
-1. Päivitin localin paketit komennoilla sudo apt-get update ja sudo apt-get upgrade'
+1. Päivitin virtuaalikoneeni paketit komennoilla sudo apt-get update ja sudo apt-get upgrade'
 2. Asensin virtualenv paketin komennolla 'sudo apt-get -y install virtualenv'
 3. Tarkistin seuraavaksi, mitä Teron ohjeessa oleva komento 'virtualenv --system-site-packages -p python3 env/' tarkoittaa ja mitä lupia kohteelle annetaan komennolla 'man virtualenv'
 
@@ -114,6 +114,42 @@ Komento määritettiin seuraavasti
 ![kuva](https://github.com/user-attachments/assets/c2fd59c4-1cc9-4307-8127-6f2ccc59289d)
 
 36. Totesin tämän tehtävän onnistuneen.
+
+# b) Django tuotantoon
+
+29.9.2024 klo 13:36
+
+Käytin tehtävän tekemiseen Tero Karvisen ohjetta (https://terokarvinen.com/2022/deploy-django/)
+
+1. Moni ohjeen vaiheista oli jo tehty aiemmissa tämän kurssin harjoituksissa, kuten name based hosting ja apachen asentaminen, sekä tässä harjoituksessa aiemmin tehty
+2. En muistanut enää tarkkaan, mitä name based hostingeja minulla oli käytössä, joten päätin luoda uuden ja deaktivoida muut saadakseni puhtaan alkutilanteen
+3. Olin jo aikaisemmassa vaiheessa siirtänyt edellisessä tehtävässä tehdyt aineistot uuteen kansioon, sillä en halunnut pitää niitä Home kansiossa
+4. Tein siirron komennolla 'mv passelico publicwsgi/passelico'
+5. Loin sijainnin ja väliaikaisen html tiedoston.
+
+![kuva](https://github.com/user-attachments/assets/a1596dd5-ae75-43a3-bb6d-58817fc244dc)
+
+6. Seuraavaksi loin yksinkertaisen Name Based Virtual Hosting konfigruraatiotiedoston Apachen asetuksiin.
+
+![kuva](https://github.com/user-attachments/assets/6e60608f-8a6b-4ab1-82dc-dc499e1cb5f4)
+
+7. Tutkin vielä mitä teron ohjeessa oleva 'Alias' komento tekee, sillä en muista huomanneeni sitä aiemmissa tehtävissä
+8. Totesin kyseessä olevan Apachen ominaisuus mod_alias, joka toimii liikenteen ohjaamisessa sivuston sisällä (https://httpd.apache.org/docs/2.4/mod/mod_alias.html#alias)
+
+![kuva](https://github.com/user-attachments/assets/f5401c17-7f09-4aa4-a67b-eb03aa7d627e)
+
+9. Tehtyäni uuden sivun päätin vielä ottaa muut sites-aviable kansion conf tiedostot pois päältä komennolla 'sudo a2dissite [sivun nimi]'
+
+![kuva](https://github.com/user-attachments/assets/0713bafe-f8b0-4756-980c-f0eb8d6587a7)
+
+10. Tämän jälkeen vielä aktivoin uuden konfiguraation komennolla 'sudo a2ensite passelico.conf'
+
+![kuva](https://github.com/user-attachments/assets/250caf78-7366-404f-96b4-10c9201435e0)
+
+Sivu ennen demonin uudelleen käynnistämistä
+
+
+
 
 
 
