@@ -73,6 +73,57 @@ Komento määritettiin seuraavasti
 ![kuva](https://github.com/user-attachments/assets/5a6084ab-4113-419f-9b2d-f112a86a8f9b)
 
 20. Olin sisällä.
+21. Loin uuden superkäyttäjän samalla tapaa kuin aiemmin ja nimesin sen "arto"
+22. Pääsin tälläkin käyttäjällä kirjautumaan sisään admin oikeuksin
+23. Seuraavaksi käynnistin ohjelman crm komennolla './manage.py startapp crm' ja lisäsin sen asennettujen ohjelmien luetteloon ohjeen määrittämällä tavalla
+
+![kuva](https://github.com/user-attachments/assets/cf9a9dbe-4800-45f7-ab17-c27d4956fa41)
+
+24. Loin models tietokantaan uuden kentän ohjeen opettamalla tavalla. Ymmärrykseni mukaan komennossa määritetään uusi luokka Customer, jolle annetaan yksi tieto, joka tässä tapauksessa on nimi maksimipituudeltaan 300 merkkiä.
+    
+![kuva](https://github.com/user-attachments/assets/fe66c93c-d262-4080-8fce-0ce07b67affb)
+
+25. Ajoin seuraavaksi komennot './manage.py makemigrations' ja './manage.py migrate'
+26. Ymmärtääkseni tämä lisää toiminnallisuudet django projektiin, muttei anna vielä suoraa mahdollisuutta päästä näihin ominaisuuksiin käsiksi. Tätä varten ne pitää lisätä admin.py tiedostoon.
+
+![kuva](https://github.com/user-attachments/assets/3eeb12e0-05a5-4b76-bf66-013733c0d8ff)
+
+27. Yrittäessäni käynnistää palvelinta komennolla './manage.py runserver' sain pitkän virhekomennon. Siinä oli kuitenkin selvästi määritetty virhe, sulku puuttui.
+
+![kuva](https://github.com/user-attachments/assets/22789b4d-60a7-4d98-8527-cda4b186d963)
+
+28. Korjasin virheen ja palvelin lähti iloisesti käyntiin.
+
+![kuva](https://github.com/user-attachments/assets/41fca29a-4d59-4780-9530-120b67845841)
+
+29. CRM ja Customers taulu olivat ilmestyneet admin näkymään
+30. 
+![kuva](https://github.com/user-attachments/assets/f29ef542-c25e-4f58-91b3-603f16bf0470)
+
+31. Lisäsin uusia asiakkaita ja ne tulivat näkyviin "Customer object (n)" muotoisina merkintöinä, joiden sisältä löytyi määritetty nimi.
+ 
+![kuva](https://github.com/user-attachments/assets/138a50e4-0e69-4e37-8907-de4bdf5e7fc4)
+
+33. Yritin poistaa ja lisätä uuden nähdäkseni mitä numero Customer objectin perässä tarkoittaa.
+
+![kuva](https://github.com/user-attachments/assets/d31b0b57-e60a-4629-ba10-3a7356bd85f4)
+
+34. Luotuani uuden käyttäjän totesin, että tämä kuvaa juoksevaa numerointia, sillä uuden objektin numero oli 4 eikä 3.
+35. Tein vielä Teron ohjeen mukaiset päivitykset ja lisäsin models.py tiedostoon funktion, joka vaihtaa ID:n tilalle nimen.
+
+![kuva](https://github.com/user-attachments/assets/c2fd59c4-1cc9-4307-8127-6f2ccc59289d)
+
+36. Totesin tämän tehtävän onnistuneen.
+
+
+
+
+
+
+
+
+
+
 
 
 
