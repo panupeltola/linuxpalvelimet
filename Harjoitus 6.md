@@ -197,41 +197,13 @@ Käytin tehtävän tekemiseen Tero Karvisen ohjetta (https://terokarvinen.com/20
 
 32. Lisäsin ohjeen mukaisen polun juureen ja "import os" tiedoston alkuun.
 33. Ajoin komennon '.manage.py collectstatic'
-34. Tästä huolimatta sivun ulkoasu ei toiminut, vaikka ajon jälkeen tuli ilmotus 127 staattisen tiedoston kopioimisesta. Tätä tilannetta ei myöskään muuttanut Apachen uudelleen käynnistäminen.  
+34. Tästä huolimatta sivun ulkoasu ei toiminut, vaikka ajon jälkeen tuli ilmotus 127 staattisen tiedoston kopioimisesta. Tätä tilannetta ei myöskään muuttanut Apachen uudelleen käynnistäminen.
+35. Päätin jättää asian sellaseen keskeneräiseksi ja kysyä asiasta mahdollisuuden tullessa, sillä pelkään korjaamalla rikkovani tilannetta entisestään. Ja logiikka toimii.
 
+# Lähteet:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
+1. T. Karvinen, 2022, Django 4 Instant Customer Database Tutorial, https://terokarvinen.com/2022/django-instant-crm-tutorial/, luettu 29.9.2024
+2. T. Karvinen, 2022, Deploy Django 4 - Production Install, https://terokarvinen.com/2022/deploy-django/, luettu 29.9.2024
+3. The Apache Software Foundation, 2024, mod_alias, https://httpd.apache.org/docs/2.4/mod/mod_alias.html#alias, luettu 29.9.2024
+4. 'man virtualenv', luettu 29.9.2024
+5. 'man pwgen', luettu 29.9.2024
