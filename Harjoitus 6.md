@@ -146,7 +146,70 @@ Käytin tehtävän tekemiseen Tero Karvisen ohjetta (https://terokarvinen.com/20
 
 ![kuva](https://github.com/user-attachments/assets/250caf78-7366-404f-96b4-10c9201435e0)
 
-Sivu ennen demonin uudelleen käynnistämistä
+11. Yritin tehdä ohjeen mukaan, mutta tämä ohjasi minut Apachen muokkaamattomaan pääikkunaan.
+12. Yritin tämän jälkeen muokata tiedostoa "/var/www/html/index.html"
+13. Tämä muutti pääsivun ja totesin, että ongelma on jossain konfiguraatiotiedostossa.
+14. Yritin edellisissä harjoituksessa käyttämääni DocumentRootia Aliaksen sijaan ja uusi sivu lähti toimimaan localhost osoitteessa
+15. Loin uuden ympäristön komennolla 'virtualenv -p python3 --system-site-packages env' ja tein kaikki kohdan a) toimet uudelleen, koska en päässyt pois Debug sivulta.
+16. Lopulta tajusin virheen johtuneen siitä, että käytin osoitteena 127.0.0.1:8000 ja /admin puuttui perästä, mutta tulipahan harjoiteltua toistamiseen
+17. Muokkasin passelico.conf tiedostoa Teron ohjeen pohjalta.
+
+![kuva](https://github.com/user-attachments/assets/bf87b19f-31fb-498d-a96c-dc624aed6636)
+
+
+
+18. Tehtyäni nämä toimet asensin ohjeen mukaan libapache2-mod-wsgi-py3 paketin komennolla 'sudo apt-get -y install libapache2-mod-wsgi-py3'
+19. Tämän jälkeen tarkistin ohjeen mukaan syntaxin ja käynnistin apachen uudelleen.
+
+![kuva](https://github.com/user-attachments/assets/1afb8d5d-1936-4b7f-a57c-fc240e37bb34)
+
+20. Sain kuitenkin vastaukseksi 404. Hetken asiaa mietittyäni totesin, että minun palvelimeni ei ole käynnissä.
+21. Vaikka sen käynnistinkin, ei palvelin lähtenyt pelaamaan
+22. Katsoin läpi konfiguraatiotiedostoani ja huomasin, että minulla on jäänyt kahteen määritykseen ylimääräinen kautta viiva
+
+![kuva](https://github.com/user-attachments/assets/5db43d78-3caf-43be-b158-3f767f06499b)
+
+
+23. Tämäkään ei toiminut, joten katsoin lokeja
+
+
+![kuva](https://github.com/user-attachments/assets/c8aa6155-af64-487a-9435-33d88193ae0e)
+
+24. Lokeista selvisi, että wsgi.py reitti oli väärin. Olin laittanut yhden kansion liian vähän jonoon. Tämän jälkeen käynnistin Apachen uudelleen ja toivoin parasta.
+
+
+![kuva](https://github.com/user-attachments/assets/aeddf806-031f-4719-bbab-adcf37fd1f8e)
+
+25. Djangon asennus onnistui vihdoin, tässä vaiheessa meni noin tunti kirotessa ja hermoillessa, eikä se suoranaisesti auttanut tarkkaavaisuutta.
+26. Seuraavaksi poistin debug tilan päältä ohjeen mukaisesti settings.py tiedostosta.
+
+![kuva](https://github.com/user-attachments/assets/f061b767-9d27-492d-9604-b2d25567ad0c)
+
+27. Sivua ei enää löytynyt, kuten tarkoitus oli. Tämä on kuitenkin erilainen viesti kuin aiemmin, joten näin asian edenneen.
+
+![kuva](https://github.com/user-attachments/assets/f70bbc0a-76bc-48c4-9a90-92cc2570cfd4)
+
+28. Menin osoitteeseen localhost/admin ja löysin väärin ladanneen sivun. Koetin pääsenkö kirjautumaan sisään.
+29. Sisäänkirjautuinen onnistui, seuraavaksi korjaan ohjeen mukaan tyyliseikkoja.
+30. Muokkasin taas settings.py tiedostoa microlla.
+
+![kuva](https://github.com/user-attachments/assets/3de9601d-89f9-4b12-8f77-3158ebba3db4)
+
+32. Lisäsin ohjeen mukaisen polun juureen ja "import os" tiedoston alkuun.
+33. Ajoin komennon '.manage.py collectstatic'
+34. Tästä huolimatta sivun ulkoasu ei toiminut, vaikka ajon jälkeen tuli ilmotus 127 staattisen tiedoston kopioimisesta. Tätä tilannetta ei myöskään muuttanut Apachen uudelleen käynnistäminen.  
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
