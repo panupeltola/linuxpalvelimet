@@ -98,6 +98,8 @@ Löysin foorumilta keskustelua satunnaisen numeron luonnista ja se luotiin komen
 - '-i 1-100' määrittää numeroarvojen välin (tässä tapauksessa 1-100)
 - '-n 1' määrittää luotavien tulosteiden määrän (arpoo useamman nopan)
 
+(https://unix.stackexchange.com/questions/140750/generate-random-numbers-in-specific-range)
+
 Muokkasin komennon muotoon 'shuf -i 1-6 -n 1' ja kokeilin miten käy, halusin myös tarkastaa mitä -n arvon muuttaminen tekee koska en täysin ymmärtänyt sitä dokumentaatiosta, joten testasin sitäkin
 
 ![kuva](https://github.com/user-attachments/assets/eced423e-b9da-4684-980d-1f9dabbc51c6)
@@ -141,7 +143,7 @@ Tällä versiolla nopan heitto toimi. Nyt vain pitäisi saada muuttuja toimimaan
 Hetken googlailtuani ja ihmeteltyäni en ollut askeltakaan lähempänä oikeaa, päätin kysyä ChatGPT:ltä promptilla "how do i set a variable value from a 'shuf' function in shell script with linux"
 
 Sain vastaukseksi alla olevan ohjeen.
-cat 
+
 ![kuva](https://github.com/user-attachments/assets/e55dbcc9-a55c-44d2-8438-e453dffc4818)
 
 Pienen taistelun välilyöntien kanssa sain vihdoin ohjelman logiikan toimimaan. 
