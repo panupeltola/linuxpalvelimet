@@ -239,6 +239,7 @@ Annoin oikeudet ja loin tiedostot, jotta sain sivun näkymään Erkille.
 (https://www.hivelocity.net/kb/how-can-i-change-the-port-ssh-listens-on/)
 
 SSH asennus
+
 ![kuva](https://github.com/user-attachments/assets/1166aa4b-2826-4e88-b92e-bb120063f621)
 
 
@@ -262,6 +263,8 @@ Vaihdoin kuunneltavan portin kohteesta /etc/ssh/ssh_config.
 ![kuva](https://github.com/user-attachments/assets/9b35147f-6355-4278-b2fc-4aeffb4e0902)
 
 Pääsin uuteen kirjautumaan sisään uudella SSH portilla komennolla 'ssh passeli@127.0.0.1 -p 1337'
+
+![kuva](https://github.com/user-attachments/assets/36bfec10-1b63-40a6-8b03-61a8499a3a00)
 
 
 ## Django
