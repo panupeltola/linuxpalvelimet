@@ -227,6 +227,91 @@ Loin uuden käyttäjän 'adduser erkki' komennolla. Erkki sai salasanakseen "esi
 
 ![kuva](https://github.com/user-attachments/assets/c1b41c3a-057a-4a57-b530-edff1d6b9220)
 
+Annoin oikeudet ja loin tiedostot, jotta sain sivun näkymään Erkille.
+
+![kuva](https://github.com/user-attachments/assets/7061d666-0529-4fe0-a2c4-2d22527dce0e)
+
+## ssh
+
+SSH asennus
+![kuva](https://github.com/user-attachments/assets/1166aa4b-2826-4e88-b92e-bb120063f621)
+
+
+SSH yhteys toimii salsanalla
+
+![kuva](https://github.com/user-attachments/assets/f1d1d84d-925b-4a12-8a3a-7cc1e90ca71d)
+
+
+Lisäsin uuden ssh avaimen komennolla ssh-copy-id passeli@127.0.0.1
+
+![kuva](https://github.com/user-attachments/assets/30b8ae3c-b48d-4332-b5e4-d3508ed5ba73)
+
+Nyt kirjautuminen toimii ilman salasanaa.
+
+![kuva](https://github.com/user-attachments/assets/5084f56c-430a-47ef-88fb-e1cbf7602ace)
+
+En luonut uutta käyttäjää, kuten tehtävässä esitettiin, mutta olisin toiminut täysin samalla kaavalla.
+
+Vaihdoin kuunneltavan portin kohteesta /etc/ssh/ssh_config.
+
+![kuva](https://github.com/user-attachments/assets/9b35147f-6355-4278-b2fc-4aeffb4e0902)
+
+Pääsin uuteen kirjautumaan sisään uudella SSH portilla komennolla 'ssh passeli@127.0.0.1 -p 1337'
+
+
+## Django
+
+![kuva](https://github.com/user-attachments/assets/08467958-a89a-4a33-8550-354bf4a84d5f)
+
+Virtuaaliympäristö asennettu
+
+![kuva](https://github.com/user-attachments/assets/5d889b94-1dea-4f15-a3a4-af5f31f89a8c)
+
+Django asennettu
+
+![kuva](https://github.com/user-attachments/assets/cd65b9ed-1d5f-43ce-a3fc-97a652ec54e7)
+
+Palvelin pyörii
+
+![kuva](https://github.com/user-attachments/assets/442157b0-49cc-4df7-a9cc-c0eaecb465ba)
+
+Admin toimii
+
+![kuva](https://github.com/user-attachments/assets/875e4090-6207-4595-911b-1a1497036922)
+
+Käyttäjä Erkki ja taulu Donations lisätty.
+
+![kuva](https://github.com/user-attachments/assets/19c4882b-0f69-4298-8295-07ca3668ace9)
+
+Lahjoitukset toimivat.
+
+## Django tuotantoon
+
+![kuva](https://github.com/user-attachments/assets/2c4660a1-e5ac-4819-ad1d-12d66a921005)
+
+Konfiguraatio tehty
+
+![kuva](https://github.com/user-attachments/assets/3b7cabae-d223-45ea-8acf-0ad3f34af8e1)
+
+Django pyörii localhostilla
+
+![kuva](https://github.com/user-attachments/assets/81a44a0f-0794-41af-a6c1-8d9bbb3ffdc5)
+
+Myös admin sivu toimii localhostin kautta, eli tuotantoon vienti valmis.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
