@@ -87,22 +87,84 @@ Ajoin sen ohjeen mukaan komennolla './main'
 
 Tuloste oli oikea ja totesin tehtävän tehdyksi.
 
-# b) 
+# b) Uusi komento
 
+## Funktio
 
+Halusin luoda komennon, joka heittää noppaa antaen satunnaisen numeron väliltä 1-6.
 
+Löysin foorumilta keskustelua satunnaisen numeron luonnista ja se luotiin komennolla 'shuf -i 1-100 -n 1' katsoin komennon 'shuf' manuaalia osien selvittämiseksi:
+- 'shuf' kutsuu prosessin
+- '-i 1-100' määrittää numeroarvojen välin (tässä tapauksessa 1-100)
+- '-n 1' määrittää luotavien tulosteiden määrän (arpoo useamman nopan)
 
+Muokkasin komennon muotoon 'shuf -i 1-6 -n 1' ja kokeilin miten käy, halusin myös tarkastaa mitä -n arvon muuttaminen tekee koska en täysin ymmärtänyt sitä dokumentaatiosta, joten testasin sitäkin
 
+![kuva](https://github.com/user-attachments/assets/eced423e-b9da-4684-980d-1f9dabbc51c6)
 
+Halusin lisätä komentoon myös tekstiä, joten päätin luoda komentoon muuttujan.
+Ensin piti kuitenkin tehdä komento ja testata sen toimivuus.
+Olen aikaisemmassa kurssissa myös luonut komentoja, joten minulla on jo jotain osaamista niistä.
 
+Loin uuden shell komennon 'micro noppa.sh'
 
+Aluksi laitoin #!/bin/sh ohjaamaan oikeaan ympäristöön ja loin hei maailma tekstin tulemaan 'echo' komennon kautta.
 
+Yritin ajaa komentoa komennolla './noppa.sh'
 
+![kuva](https://github.com/user-attachments/assets/a1579005-031d-4fd8-b29f-a756551bb364)
 
+Sain virheen "Permission denied" kun katsoin tiedoston oikeuksia, niin totesin ettei kenelläkään ole oikeutta ajaa sitä. Korjasin tämän komennolla 'chmod ugo+x noppa.sh'.
 
+![kuva](https://github.com/user-attachments/assets/2c785dd5-2642-4b9f-ade2-ab69e3006a26)
 
+Nyt ohjelman pystyi ajamaan. Seuraavaksi halusin koittaa luoda nopasta muuttujan ja tulostaa sen komentoon.
 
+![kuva](https://github.com/user-attachments/assets/0aea1585-27eb-4650-89a8-8da4f142663a)
 
+Löysin muuttujaan ohjeen (https://www.shellscript.sh/variables1.html)
 
+Lisäsin myös shuf komennon yksinään, jotta näen mikäli jokin tuloste puuttuu, että onko ongelma oletettavasti muuttujassa vai funktiossa.
 
+![kuva](https://github.com/user-attachments/assets/e64b70ec-a1fd-4819-b5f1-60e80f637652)
+
+Ensimmäinen yritys epäonnistui, huomasin, että olin jättänyt 'echo' komennon 'shuf' funktion eteen, mikä johti siihen, että vain teksti tulostui.
+
+Myös muuttuja epäonnistui, mutta palaan siihen seuraavassa revisiossa. Nyt haluan nopan heiton toimimaan.
+
+![kuva](https://github.com/user-attachments/assets/832e018f-1477-4b59-8d7f-c5b094b139c9)
+
+Tällä versiolla nopan heitto toimi. Nyt vain pitäisi saada muuttuja toimimaan.
+
+![kuva](https://github.com/user-attachments/assets/5d142422-42db-418d-a667-c468a962194d)
+
+Hetken googlailtuani ja ihmeteltyäni en ollut askeltakaan lähempänä oikeaa, päätin kysyä ChatGPT:ltä promptilla "how do i set a variable value from a 'shuf' function in shell script with linux"
+
+Sain vastaukseksi alla olevan ohjeen.
+cat 
+![kuva](https://github.com/user-attachments/assets/e55dbcc9-a55c-44d2-8438-e453dffc4818)
+
+Pienen taistelun välilyöntien kanssa sain vihdoin ohjelman logiikan toimimaan. 
+Ongelmana oli, että muuttujassa käytin välilyöntejä, mikä ei toiminut ja olin unohtanut välilyönnin viimeisen 'echo' komennon jälkeen.
+
+![kuva](https://github.com/user-attachments/assets/c8f20e13-92ba-4691-a451-f1b85167dad1)
+
+Poistin nyt testaamiseen tarvitut rivit ja jätin vain noppafunktion.
+
+## Siirto
+
+Muistin aikaisemmasta kurssista, että tiedosto pitää viedä kansioon /usr/local/bin
+Kopioin tiedoston komennolla 'sudo cp noppa.sh /usr/local/bin/noppa.sh'
+
+Nyt kun kirjoitin 'noppa.sh' heitin noppaa.
+
+![kuva](https://github.com/user-attachments/assets/5b2d3152-9352-456f-a5fe-216a33eb4ca7)
+
+Halusin vielä koettaa miten käy jos poistan komennosta ".sh liitteen"
+
+Tein sen komennolla kopioimalla tiedoston uudelleen 'sudo cp noppa.sh /usr/local/bin/noppa'
+
+![kuva](https://github.com/user-attachments/assets/c568b162-fd9c-4def-80ad-ac6a581a379b)
+
+Tämä toimi ja nyt pystyin heittämään noppaa tehokkaammin.
 
