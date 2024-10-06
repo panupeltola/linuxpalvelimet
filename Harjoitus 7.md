@@ -170,3 +170,76 @@ Tein sen komennolla kopioimalla tiedoston uudelleen 'sudo cp noppa.sh /usr/local
 
 Tämä toimi ja nyt pystyin heittämään noppaa tehokkaammin.
 
+# c) Vanha Labra
+
+Päätin tehdä tässä harjoituksessa maaliskuussa 2023 pidetyn labraharjoituksen (https://terokarvinen.com/2023/linux-palvelimet-2023-arvioitava-laboratorioharjoitus/?fromSearch=linux%20palvelimet%202023)
+
+Aloitin asentamalla uuden virtuaalikoneen, asentamalla siihen palomuurin ja päivittämällä kaiken.
+
+
+## Raportin luonti
+
+Loin kansion ja sen jälkeen tiedoston komennolla 'touch index.md'
+
+![kuva](https://github.com/user-attachments/assets/6e2a9030-3d45-4bf3-8994-7d66ac57bc99)
+
+## Ei sekoseiskoja
+
+![kuva](https://github.com/user-attachments/assets/b273c2d9-0a9e-4723-841f-842822cf7ea2)
+
+Oikeudet poistettu komennolla 'chmod go-r index.md'
+
+## hey
+
+![kuva](https://github.com/user-attachments/assets/55139358-da13-41aa-93e1-a23cfe07c035)
+
+Ohjelma toimii paikallisesti
+
+![kuva](https://github.com/user-attachments/assets/e7dcd88c-1dd4-4e36-adf3-989d38aa18d5)
+
+Ohjelma toimii kaikilla.
+
+![kuva](https://github.com/user-attachments/assets/7f043539-05ea-412a-b906-71ae6b64f971)
+
+Käyttäjäoikeudet periytyivät siirron läpi.
+
+## 1000x nano
+
+Micro asennettu jo aiemmassa vaiheessa 
+
+![kuva](https://github.com/user-attachments/assets/4a6aa734-2012-4e26-a677-41a6a09d1188)
+
+Asensin lisäosan:
+
+![kuva](https://github.com/user-attachments/assets/f606bdab-ffa9-4da9-9cbe-a3bef32164f3)
+
+## Apache
+
+Seuraavaksi asensin Apachen komennolla 'sudo apt-get install apache2'
+
+![kuva](https://github.com/user-attachments/assets/f934ced6-fc1c-422b-ad37-015e22bab05b)
+
+![kuva](https://github.com/user-attachments/assets/5c962dab-ea0e-426b-a868-742d9b7f9a74)
+
+Asennus onnistui.
+
+Loin uuden käyttäjän 'adduser erkki' komennolla. Erkki sai salasanakseen "esimerkkisalasana"
+
+![kuva](https://github.com/user-attachments/assets/c1b41c3a-057a-4a57-b530-edff1d6b9220)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
