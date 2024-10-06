@@ -311,6 +311,10 @@ Django pyörii localhostilla
 
 Myös admin sivu toimii localhostin kautta, eli tuotantoon vienti valmis.
 
+# d)
+
+Asennan myös taustalla uuden koneen ensi viikon koitosta varten.
+
 
 # Lähteet
 
