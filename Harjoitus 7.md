@@ -176,6 +176,8 @@ Päätin tehdä tässä harjoituksessa maaliskuussa 2023 pidetyn labraharjoituks
 
 Aloitin asentamalla uuden virtuaalikoneen, asentamalla siihen palomuurin ja päivittämällä kaiken.
 
+Tässä raportissa edetään vauhdilla, eikä näytetä kuin maksimissaan tärkeimmät välivaiheet ja todennetut lopputulemat. Sain kaikki labran tehtävät tehtyä järkevässä ajassa. Paljon on tällä kurssilla opittu.
+
 
 ## Raportin luonti
 
@@ -233,6 +235,9 @@ Annoin oikeudet ja loin tiedostot, jotta sain sivun näkymään Erkille.
 
 ## ssh
 
+(https://wiki.debian.org/SSH)
+(https://www.hivelocity.net/kb/how-can-i-change-the-port-ssh-listens-on/)
+
 SSH asennus
 ![kuva](https://github.com/user-attachments/assets/1166aa4b-2826-4e88-b92e-bb120063f621)
 
@@ -261,6 +266,8 @@ Pääsin uuteen kirjautumaan sisään uudella SSH portilla komennolla 'ssh passe
 
 ## Django
 
+(https://terokarvinen.com/2022/django-instant-crm-tutorial/)
+
 ![kuva](https://github.com/user-attachments/assets/08467958-a89a-4a33-8550-354bf4a84d5f)
 
 Virtuaaliympäristö asennettu
@@ -287,6 +294,8 @@ Lahjoitukset toimivat.
 
 ## Django tuotantoon
 
+(https://terokarvinen.com/2022/deploy-django/)
+
 ![kuva](https://github.com/user-attachments/assets/2c4660a1-e5ac-4819-ad1d-12d66a921005)
 
 Konfiguraatio tehty
@@ -300,31 +309,15 @@ Django pyörii localhostilla
 Myös admin sivu toimii localhostin kautta, eli tuotantoon vienti valmis.
 
 
+# Lähteet
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+1. T. Karvinen, 2022, Django 4 Instant Customer Database Tutorial, https://terokarvinen.com/2022/django-instant-crm-tutorial/, luettu 6.10.2024
+2. T. Karvinen, 2022, Deploy Django 4 - Production Install, https://terokarvinen.com/2022/deploy-django/, luettu 6.10.2024
+3. L. Rendek, 2020, How to install Java on Ubuntu 18.04 Bionic Beaver Linux, https://linuxconfig.org/how-to-install-java-on-ubuntu-18-04-bionic-beaver-linux, luettu 6.10.2024
+4. L. Rendek, 2020, Java Hello World example on Linux, https://linuxconfig.org/java-hello-world-example-on-linux, luettu 6.10.2024
+5. 'man shuf'
+6. ChatGPT prompt: "how do i set a variable value from a 'shuf' function in shell script with linux"
+7. ChatGPT prompt: "explain function curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh"
+8. S. Klabnik ja C. Nichols, 2024, The Rust Programming Language, https://doc.rust-lang.org/beta/book/ch01-02-hello-world.html, luettu 6.10.2024
+9. Debian Wiki, 2023, SSH, https://wiki.debian.org/SSH, luettu 6.10.2024
+10. Hivelocity, How Can I Change the Port SSH Listens On?, https://www.hivelocity.net/kb/how-can-i-change-the-port-ssh-listens-on/, luettu 6.10.2024
